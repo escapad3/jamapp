@@ -14,7 +14,7 @@ class Callback extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:8080/profile/')
+    fetch('https://jam-box.herokuapp.com/profile/')
       .then((response) => response.json())
       .then((data) => {
         this.setState({username: data.displayName})
