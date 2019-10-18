@@ -29,7 +29,7 @@ export default class SearchBox extends Component {
     fetch('https://jam-box.herokuapp.com/playlists')
       .then((response) => response.json())
       .then((data) => {
-        this.setState({playlists: data});
+        this.setState({songs: data});
       })
       .catch(console.log);
   }
