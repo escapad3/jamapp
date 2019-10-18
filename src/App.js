@@ -13,7 +13,7 @@ class App extends Component {
 
   render () {
     return (
-      <div className="App">
+      <div className="App container">
         <SearchBox />
         <Route path='/callback' component={Callback} />
         <a href={this.state.url}>Link</a>
