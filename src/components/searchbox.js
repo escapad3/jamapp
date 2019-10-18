@@ -26,7 +26,7 @@ export default class SearchBox extends Component {
 
   getCollection = (event) => {
     event.preventDefault();
-    fetch('https://jam-box.herokuapp.com/playlists')
+    fetch('https://jam-box.herokuapp.com/collection')
       .then((response) => response.json())
       .then((data) => {
         this.setState({songs: data});
